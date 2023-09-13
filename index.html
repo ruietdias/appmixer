@@ -43,6 +43,58 @@
                         </div>
                     </div>
                 </div>
+                <div class="welcome-page">
+                    <h2>
+                      Welcome to "YU", the imaginary SaaS product with Appmixer No-Code Workflow components embedded!
+                    </h2>
+                    <h3>
+                      Getting started:
+                    </h3>
+                    <ol>
+                      <li>
+                        Study the source code of this demo (especially the <a href="main.js">main.js</a> file) to learn how you can embed Appmixer in your own product.
+                      </li>
+                      <li>
+                        You'll notice the first three lines in the <a href="main.js">main.js</a> file are the basic configuration lines which you need
+                        to provide before going further. The lines look like this:
+                        <pre>
+                            var BASE_URL = 'YOUR_APPMIXER_API_URL';
+                            var USERNAME = 'YOUR_USER_USERNAME';
+                            var PASSWORD = 'YOUR_USER_PASSWORD';</pre><ul>
+                          <li>Replace <tt>YOUR_APPMIXER_API_URL</tt> in <tt>BASE_URL</tt> with the Appmixer API URL that you were given during the sign-up process.</li>
+                          <li>Replace <tt>USERNAME</tt> and <tt>PASSWORD</tt> with some username and password of your test user (e.g. mytest@example.com/mytest123).
+                            Note that the demo app (<tt>main.js</tt>) is implemented so that when this user does not exist, it will create one automatically with the username/password specified.
+                            Also note that in your own product, you'll most likely use an email address of your real user as the <tt>USERNAME</tt> and an auto-generated token as <tt>PASSWORD</tt> and store these with your real user accounts metadata.
+                            That way, you'll be able to associate your own user accounts with the Appmixer "virtual users".
+                          </li>
+                        </ul>
+                        Save the main.js file and refresh the page.
+                      </li>
+                      <li>
+                        Click on the "App Studio" menu item to explore some of the embedded Appmixer UI widgets.
+                        The widgets used in this demo are:
+                        <ul>
+                          <li><tt>appmixer.ui.FlowManager</tt> (App Studio -> My Flows) ... which displays the list of flows the user has previously created. More information about FlowManager can be found in the <a target="_blank" href="https://docs.appmixer.com/appmixer/appmixer-sdk/api-reference/flowmanager">SDK documentation</a>.</li>
+                          <li><tt>appmixer.ui.Designer</tt> (App Studio -> My Flows -> Create Flow) ... which displays the no-code drag&amp;drop designer of workflow automations. More information about Designer can be found in the <a target="_blank" href="https://docs.appmixer.com/appmixer/appmixer-sdk/api-reference/designer">SDK documentation</a>.</li>
+                          <li><tt>appmixer.ui.Accounts</tt> (App Studio -> Connected Accounts) ... which displays the list of connected accounts (3rd party accounts that the user authenticated to during flow building phase). More information about Accounts can be found in the <a target="_blank" href="https://docs.appmixer.com/appmixer/appmixer-sdk/api-reference/accounts">SDK documentation</a>. Note that this list will be empty until you build a flow that uses a 3rd party app.</li>
+                          <li><tt>appmixer.ui.InsightsLogs</tt> (App Studio -> Automation Logs) ... which displays the logs representing any activity within the user flows. More information about InsightsLogs can be found in the <a target="_blank" href="https://docs.appmixer.com/appmixer/appmixer-sdk/api-reference/insightslogs">SDK documentation</a>. Note that the logs will be empty until you start a flow.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        Once you're done exploring Appmixer UIs, you might want to try to implement your own custom connectors (either to your private API, any other public 3rd party app or custom utilities).
+                        Please follow our <a href="https://docs.appmixer.com/appmixer/appmixer-cli/appmixer-cli" target="_blank">online tutorial to learn more</a>.
+                      </li>
+                    </ol>
+                    <p class="note">
+                      Note that this demo page references the Appmixer JavaScript SDK from <tt>https://my.appmixer.com/appmixer/appmixer.js</tt>. However, you might want to
+                      replace the <tt>my.appmixer.com</tt> with the location of your own Appmixer instance (provided to you during the sign-up process) OR download the
+                      JavaScript SDK to your own custom location (CDN, Web server). This is recommended to avoid version incompatibilities between your own Appmixer instance engine API and
+                      the Appmixer JavaScript SDK.
+                    </p>
+                    <p class="note support">
+                      If at any point during discovering Appmixer you're unsure what to do, please contact our customer support at <a href="mailto:support@appmixer.com">support@appmixer.com</a>.
+                    </p>
+                </div>
                 <div class="my-appmixer-wrapper">
                     <div id="my-flow-manager"></div>
                     <div id="my-designer"></div>
