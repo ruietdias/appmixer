@@ -1,0 +1,248 @@
+/*
+  Note that this stylesheet file is merely to make the Demo page look a little bit prettier.
+  It is not meant to change the styling of the Appmixer UI widgets. To customize the look and feel of the
+  Appmixer UI widgets, please see the documentation on Custom themes: https://docs.appmixer.com/appmixer/customizing-ui/custom-theme.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #f5f6f8;
+}
+
+.top-menu {
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    z-index: 100;
+    left: 300px;
+    top: 0;
+    background-color: #f7f7f7;
+    display: block;
+    width: calc(100% - 300px);
+    border-bottom: 1px solid #979797;
+    box-sizing: border-box;
+}
+.top-menu i {
+    vertical-align: top;
+    margin: 20px;
+    font-size: 30px;
+    color: #8ca0b3;
+    opacity: .2;
+}
+.top-menu i:first-child {
+    margin-left: 80px;
+}
+.top-menu .demo-warning {
+    display: none;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #1E87F0;
+    padding: 10px 40px;
+    border-radius: 15px;
+    max-width: calc(100% - 370px);
+    max-height: 40px;
+    overflow: auto;
+    vertical-align: top;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.demo-info {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 10px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+.demo-info a {
+    color: white;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+.container-wrapper {
+    display: block;
+    height: 100%;
+}
+
+.card {
+    position: fixed;
+    z-index: 100;
+    width: 300px;
+    height: 100%;
+    background-color: #1E2B32;
+}
+
+.menu {
+    padding-left: 80px;
+}
+
+.header-top {
+    color: white;
+    background-color: #1E87F0;
+    padding: 5px;
+}
+
+.header {
+    padding: 5px;
+    background-color: #2A3942;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1rem;
+}
+h3 a {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.icon {
+    margin-right: 30px;
+}
+
+.body li {
+    transition: 1s all;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    margin-left: -40px;
+    margin-top: 0px;
+    color: #fff;
+    list-style: none;
+    display: block;
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+}
+
+.menu li:hover {
+    transition: 1s all;
+    color: #2f89fc;
+    background-color: rgba(42, 56, 65, 0.82);
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    cursor: pointer;
+}
+.menu li.disabled {
+    cursor: not-allowed;
+}
+
+.body > li {
+    float: left;
+}
+
+.body li ul {
+    background: #1E2B32;
+    margin-left: 240px;
+    margin-top: -38px;
+    display: none;
+    position: absolute;
+    border-top-right-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    z-index: 200;
+    width: 250px;
+}
+
+.body li:hover > ul {
+    display: block;
+    cursor: pointer;
+}
+
+/****************************************************************/
+
+
+.card li {
+    color: lightslategray;
+}
+.card li.selected,
+.card li.top-selected {
+    color: #fff;
+}
+
+.my-appmixer-wrapper {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 300px;
+}
+
+.welcome-page {
+    margin: 80px auto 0 80px;
+    color: #8ca0b3;
+    width: 70%;
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+.welcome-page h2 {
+    font-size: 24px;
+    color: #2f89fc;
+}
+.welcome-page h3 {
+    font-size: 20px;
+    color: black;
+}
+.welcome-page ol {
+    color: black;
+    font-size: 16px;
+}
+.welcome-page ol li {
+    line-height: 1.8em;
+    margin-bottom: 20px;
+}
+.welcome-page ul li {
+    line-height: 1.8em;
+    margin-bottom: 10px;
+}
+tt {
+    color: #d4235e;
+}
+.welcome-page pre {
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.note {
+    font-size: 14px;
+    line-height: 1.3em;
+}
+.note.support {
+    background: #2f89fc;
+    color: white;
+    font-size: 16px;
+    padding: 4px 8px;
+}
+.note.support a {
+    color: white;
+    text-decoration: none;
+}
+
+/****************************************************************/
+
+.am-accounts {
+    width: 97%;
+}
+.am-designer {
+    width: 97%;
+}
+.am-insights-logs {
+    width: 97%;
+}
+
+
+
