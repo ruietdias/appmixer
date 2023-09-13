@@ -1,4 +1,4 @@
-var BASE_URL = "http://api.findmore-consulting.appmixer.cloud";
+var BASE_URL = "https://api.findmore-consulting.appmixer.cloud";
 var USERNAME = "rui.dias@findmore.eu";
 var PASSWORD = "51c7/3_a7c7/ec4c1_18bccaa6_f7c7d";
 
