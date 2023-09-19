@@ -1,0 +1,46 @@
+{
+    "name": "appmixer.clickservice.clickmodule.HelloClick",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gEeCRYRYwe3nwAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAXSURBVAjXY2BgYPj//z8WErsoBAw+HQBdc1+hmBJKIwAAAABJRU5ErkJggg==",
+    "inPorts": [
+        {
+            "name": "in",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "text": { "type": "string" },
+                    "count": { "type": "number" }
+                },
+                "required": ["text"]
+            },
+            "inspector": {
+                "inputs": {
+                    "text": {
+                        "type": "text",
+                        "group": "transformation",
+                        "label": "Text",
+                        "index": 1
+                    },
+                    "count": {
+                        "type": "number",
+                        "group": "transformation",
+                        "label": "Count",
+                        "index": 2
+                    }
+                },
+                "groups": {
+                    "transformation": {
+                        "label": "Transformation"
+                    }
+                }
+            }
+        }
+    ],
+    "outPorts": [
+        {
+            "name": "out",
+            "options": [
+                { "label": "Hello Data", "value": "mydata" }
+            ]
+        }
+    ]
+}
